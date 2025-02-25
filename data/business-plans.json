@@ -1,0 +1,88 @@
+{
+    "plans": [
+        {
+            "id": "free",
+            "name": "Free Plan",
+            "price": 0,
+            "currency": "£",
+            "interval": "month",
+            "features": [
+                "Access to basic tools",
+                "Limited content access",
+                "Ad-supported experience",
+                "Community support"
+            ],
+            "isPopular": false,
+            "buttonText": "Get Started",
+            "buttonAction": "register"
+        },
+        {
+            "id": "premium",
+            "name": "Premium Plan",
+            "price": 15,
+            "currency": "£",
+            "interval": "month",
+            "features": [
+                "Access to all tools",
+                "Full content access",
+                "Ad-free experience",
+                "Priority support",
+                "Early access to new features",
+                "Download resources"
+            ],
+            "isPopular": true,
+            "buttonText": "Subscribe Now",
+            "buttonAction": "subscribe"
+        },
+        {
+            "id": "enterprise",
+            "name": "Enterprise Plan",
+            "price": null,
+            "priceText": "Custom",
+            "interval": "month",
+            "features": [
+                "All Premium features",
+                "Custom tool development",
+                "Dedicated support",
+                "API access",
+                "Custom integrations",
+                "Team management"
+            ],
+            "isPopular": false,
+            "buttonText": "Contact Sales",
+            "buttonAction": "contact"
+        }
+    ],
+    "featureComparison": [
+        {
+            "feature": "Basic Tools",
+            "free": true,
+            "premium": true,
+            "enterprise": true
+        },
+        {
+            "feature": "Premium Tools",
+            "free": false,
+            "premium": true,
+            "enterprise": true
+        },
+        {
+            "feature": "Ad-free Experience",
+            "free": false,
+            "premium": true,
+            "enterprise": true
+        },
+        {
+            "feature": "Custom Development",
+            "free": false,
+            "premium": false,
+            "enterprise": true
+        },
+        {
+            "feature": "API Access",
+            "free": false,
+            "premium": false,
+            "enterprise": true
+        }
+    ]
+}

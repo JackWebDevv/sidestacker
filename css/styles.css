@@ -1,0 +1,50 @@
+/* Custom styles */
+.nav-btn {
+    @apply flex flex-col items-center justify-center p-2 text-gray-600 hover:text-primary transition-colors;
+}
+
+.nav-btn.active {
+    @apply text-primary;
+}
+
+/* Animation for More Menu */
+#more-menu.open {
+    transform: translateX(0);
+}
+
+/* Search Modal Animation */
+#search-modal.open {
+    display: block;
+}
+
+#search-modal .bg-white {
+    transform: translateY(100%);
+}
+
+#search-modal.open .bg-white {
+    transform: translateY(0);
+}
+
+/* iOS-style button effects */
+button {
+    -webkit-tap-highlight-color: transparent;
+}
+
+button:active {
+    opacity: 0.7;
+}
+
+/* Premium badge styling */
+.premium-badge {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-gradient-to-r from-primary to-accent text-white;
+}
+
+/* Content card styling */
+.content-card {
+    @apply bg-white rounded-2xl shadow-sm p-4 mb-4;
+}
+
+/* Tool card styling */
+.tool-card {
+    @apply bg-secondary rounded-2xl p-6 mb-4 transition-transform hover:scale-[1.02];
+}
